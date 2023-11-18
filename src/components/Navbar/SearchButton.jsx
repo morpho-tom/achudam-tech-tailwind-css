@@ -8,7 +8,8 @@ const button = () => {
   font-bold 
   py-2 
   px-4 
-  rounded-full'>
+  rounded-full
+  '>
     search
     <img
       className='inline-block'
