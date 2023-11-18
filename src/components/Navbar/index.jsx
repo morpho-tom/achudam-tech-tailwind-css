@@ -11,8 +11,8 @@ const Navbar = () => {
       <nav className='bg-white '>
         <div className='flex item-center font-medium justify-around'>
           <div className='z-50 p-5 md:w-auto w-full flex justify-between' >
-            <Link to='/'><img className='md:cursor-pointer p-1 ' src={Logo} alt='logo' /></Link>
-            <div className='text-3xl' onClick={() => setopen(!open)}>
+            <Link to='/Home'><img className='md:cursor-pointer p-1 ' src={Logo} alt='logo' /></Link>
+            <div className='text-3xl md:hidden' onClick={() => setopen(!open)}>
               <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
             </div>
           </div>
@@ -22,6 +22,9 @@ const Navbar = () => {
               <Link className='py-7 px-3 inline-block hover:text-blue-400' to="Home">
                 Home
               </Link>
+            </li>
+            <li className='py-7 px-3 inline-block hover:text-blue-400 '>
+              <Navlinks />
             </li>
             <li>
               <Link className='py-7 px-3 inline-block hover:text-blue-400' to="/AboutUs">
@@ -33,9 +36,6 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
-            <li className='py-7 px-3 inline-block hover:text-blue-400 '>
-              <Navlinks />
-            </li>
           </ul>
           <div className='pt-4 md:block hidden'>
             <SearchButton />
@@ -43,8 +43,8 @@ const Navbar = () => {
 
           {/* mobile view navbar */}
 
-          <ul 
-         className={`md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "hidden"}`}>
+          <ul
+            className={`md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
             <li>
               <Link className='py-7 px-3 inline-block hover:text-blue-400' to="/">
                 Home
