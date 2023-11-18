@@ -51,6 +51,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+            <li className='py-7 px-3 inline-block hover:text-blue-400 '>
+              <Navlinks />
+            </li>
               <Link className='py-7 px-3 inline-block hover:text-blue-400' to="/AboutUs">
                 AboutUs
               </Link>
@@ -60,12 +63,10 @@ const Navbar = () => {
                 ContactUs
               </Link>
             </li>
-            <li className='py-7 px-3 inline-block hover:text-blue-400 '>
-              <Navlinks />
-              <div className='py-5'>
-                <SearchButton />
-              </div>
-            </li>
+            <div className='py-5'>
+              <SearchButton />
+            </div>
+
           </ul>
         </div >
       </nav >

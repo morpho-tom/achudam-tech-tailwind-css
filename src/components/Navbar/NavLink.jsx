@@ -38,17 +38,20 @@ const navlink = () => {
                     </div>
 
                     {/* mobile product view navbar */}
-                    {/* <div>
+                    <div>
                         {
-                            links.sublinks.map((slinks) => (
+                            link.sublinks.map((slinks) => (
                                 <div>
                                     <div>
-                                        <h1>{slinks.Head}</h1>
+                                        <h1 className='py-4 pl-7 font-semibold md:pr-0 pr-5'>{slinks.Head}</h1>
+                                        <div>{slinks.sublink.map(slink => (
+                                            <li className='py-3 pl-14'><Link to={slink.link}>{slink.name}</Link></li>
+                                        ))}</div>
                                     </div>
                                 </div>
                             ))
                         }
-                    </div> */}
+                    </div>
                 </div>
             ))}
         </>
