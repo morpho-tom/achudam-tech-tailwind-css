@@ -2,11 +2,11 @@ export  const links = [
     {
         name: "Product", submenu: "true", sublinks: [
             {
-                Head: "Proton Exchange Membrane ( PEM ) Fuel Cell",
+                Head: "Proton Exchange Membrane(PEM)Fuel Cell",
                 sublink: [
-                    { name: 'Fuel cell Stacks ( Open Cathode, Humidified)', link: "/" },
-                    { name: 'Fuel Cell Test Station ( Open cathode stack, Humidified Stack)', link: "/" },
-                    { name: 'Open Cathode PEM Fuel cell based Hydrogen Management System', link: "/" },
+                    { name: '( Open Cathode, Humidified)', link: "/" },
+                    { name: '( Open cathode stack, Humidified Stack)', link: "/" },
+                    { name: 'PEM Fuel cell based Hydrogen Management System', link: "/" },
                     { name: 'Fuel Cell components', link: "/" },
                 ]
             },
@@ -25,13 +25,13 @@ export  const links = [
             }, {
                 Head: "Bioreactors",
                 sublink: [
-                    { name: 'Fully Automated Bioreactors for Research application', link: "/" },
+                    { name: 'Fully Automated Bioreactors for R&A', link: "/" },
                     { name: 'Components for Bioreactors', link: "/" },
                 ]
             },{
                 Head: "Supercritical extraction system for Research Application",
                 sublink: [
-                    { name: 'Compact Supercritical extraction system for research application', link: "/" },
+                    { name: 'Compact Supercritical extraction system for R&A', link: "/" },
                 ]
             },{
                 Head: "Research Equipments (Customised)",

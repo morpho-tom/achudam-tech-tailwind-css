@@ -50,7 +50,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            
+
             <li className='py-7 px-3 inline-block hover:text-blue-400 '>
               <Navlinks />
             </li>
