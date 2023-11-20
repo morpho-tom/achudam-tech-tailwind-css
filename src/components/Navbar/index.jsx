@@ -10,19 +10,22 @@ const Navbar = () => {
     <>
       <nav className='bg-white '>
         <div className='flex item-center font-medium justify-around'>
+          {/* webpage logo  */}
           <div className='z-50 p-5 md:w-auto w-full flex justify-between' >
-            <Link to='/Home'><img className='md:cursor-pointer p-1 ' src={Logo} alt='logo' /></Link>
+            <Link to='/'><img className='md:cursor-pointer p-1 ' src={Logo} alt='logo' /></Link>
             <div className='text-3xl md:hidden' onClick={() => setopen(!open)}>
+              {/* hamburger menu  */}
               <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
             </div>
           </div>
-
+          {/* desktop view  */}
           <ul className='md:flex hidden uppercase item-center gap-8 ' >
             <li>
               <Link className='py-7 px-3 inline-block hover:text-blue-400' to="Home">
                 Home
               </Link>
             </li>
+            {/* product and subproduct list stored in Navlinks  */}
             <li className='py-7 px-3 inline-block hover:text-blue-400 '>
               <Navlinks />
             </li>
@@ -37,6 +40,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          {/* search button  */}
           <div className='pt-4 md:block hidden'>
             <SearchButton />
           </div>
@@ -50,7 +54,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-
+            {/* product and subproduct list stored in Navlinks  */}
             <li className='py-7 px-3 inline-block hover:text-blue-400 '>
               <Navlinks />
             </li>
@@ -64,6 +68,7 @@ const Navbar = () => {
                 ContactUs
               </Link>
             </li>
+            {/* search button */}
             <div className='py-5'>
               <SearchButton />
             </div>

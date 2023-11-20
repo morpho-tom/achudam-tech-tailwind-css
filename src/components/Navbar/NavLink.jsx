@@ -25,6 +25,7 @@ const Navlink = () => {
                                 <ion-icon name="chevron-down"></ion-icon>
                             </span>
                         </h1>
+                        {/* sub heading starts from this  */}
                         {link.submenu &&
                             <div>
                                 <div className='absolute top-20 hidden group-hover:md:block hover:md:block'>
@@ -33,6 +34,7 @@ const Navlink = () => {
                                             {/* indicate down from product  */}
                                         </div>
                                     </div>
+                                    {/* sublinks starts from here */}
                                     <div className='bg-white p-5 grid grid-cols-3 gap-10' >
                                         {link.sublinks.map((mysublinks) => (
                                             <div>

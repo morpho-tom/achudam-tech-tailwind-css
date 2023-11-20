@@ -1,3 +1,6 @@
+
+// products heading and sub headings link 
+
 export  const links = [
     {
         name: "Product", submenu: "true", sublinks: [
