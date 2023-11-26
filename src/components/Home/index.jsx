@@ -2,11 +2,12 @@ import React from "react";
 import scientist from "../../assets/scientist.svg"
 import sync from "../../assets/sync.svg"
 import reports from "../../assets/reports.svg"
+import CarouselSlider from "./CarouselSlider";
 
 const Home = () => {
     return (
         <>
-
+        
             <div class="py-20  rounded-lg bg-gradient-to-r from-sky-500 to-green-500" >
                 <div class=" container text-center  mx-auto px-6">
                     <h2 class="text-4xl  font-bold  mb-2 text-white">
@@ -17,6 +18,8 @@ const Home = () => {
                     </h3>
                 </div>
             </div>
+
+           
 
             <section class="container mx-auto px-6 p-10">
                 <h2 class="text-4xl font-bold text-center text-blue-400 mb-8">
@@ -72,6 +75,7 @@ const Home = () => {
                         <img src={sync} alt="Syncing" />
                     </div>
                 </div>
+                <CarouselSlider/>
             </section>
         </>
     );
